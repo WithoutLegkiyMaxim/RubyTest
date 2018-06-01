@@ -19,14 +19,11 @@ def FuncDing(number, n, inging)
 end
 
 if hour > 0
-    line += FuncDing(hour, 0, ending)
-    line += " "
-    line += FuncDing(minute, 1, ending)
-    line += " "
+    line += FuncDing(hour, 0, ending) + " "
+    line += FuncDing(minute, 1, ending) + " "
     line += FuncDing(sec, 2, ending)
 elsif minute>0
-    line += FuncDing(minute, 1, ending)
-    line += " "
+    line += FuncDing(minute, 1, ending) +  " "
     line += FuncDing(sec, 2, ending)
 else
     line += FuncDing(sec, 2, ending)
