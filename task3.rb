@@ -1,6 +1,8 @@
 def choose(num)
     num = ((num%100 > 10) and (num%100 < 20)) ? num%100 : num%10
-    return ((num == 0) or (num >= 5 and num <= 19)) ? 2 : (num == 1) ? 1 :  3
+    return 2 if (num == 0) or (num >= 5 and num <= 19)
+    return 1 if (num == 1)
+    return 3 if (num >= 2) or (num <= 4)
 end
 
 
