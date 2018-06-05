@@ -6,7 +6,7 @@ def choose(num)
 end
 
 
-sec = Array.new(ARGV).inject(0) {|sum, el| sum += el.to_i}
+sec = ARGV[0].to_i + ARGV[1].to_i
 time = [(sec/60)/60, (sec/60)%60, sec%60]
 
 ending = [["час","минута","секунда"],
