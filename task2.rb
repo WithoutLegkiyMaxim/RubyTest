@@ -1,15 +1,10 @@
 def right(a,b)
-    if a.length != b.length
-        return false
-    end
     n_right = 0
     flag = false
     (0..a.length).each do |i|
-        flag = true if (a == b)
-        if flag
-            n_right = i
-            break
-        end
+        flag = true if a == b
+        n_right = i if flag
+        break if flag
         a.push(a.shift)
     end
     return flag ? n_right : flag
