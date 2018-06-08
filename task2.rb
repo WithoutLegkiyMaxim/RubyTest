@@ -1,5 +1,3 @@
-ARGV[0] = '1234'
-ARGV[1] = '4123'
 def right(a,b)
   n_right = 0
   flag = false
