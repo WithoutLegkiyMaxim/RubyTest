@@ -1,8 +1,10 @@
+ARGV[0] = '1234'
+ARGV[1] = '4123'
 def right(a,b)
   n_right = 0
   flag = false
   (0..a.length).each do |i|
-    flag = true if (a^b) == 0
+    flag = true if a == b
     n_right = i if flag
     break if flag
     a.push(a.shift)
