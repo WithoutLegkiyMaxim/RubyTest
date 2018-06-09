@@ -4,7 +4,7 @@ len = a.length
 (0..len).each do |i|
 	a.push(a.shift)
 	if a.eql?(b)
-		result = i+1 if a.eql?(b)
+		result = i+1
 		break
 	end
 end
