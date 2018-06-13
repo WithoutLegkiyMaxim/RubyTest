@@ -1,1 +1,1 @@
-puts ARGV.join(' ').gsub(/(Р|К|Н|р|к|н)/){''}.strip
+puts ARGV[0].tr('РКНркн','')
